@@ -1,0 +1,2 @@
+ListMode: whitelist
+ListFilter: bot_commands, login
