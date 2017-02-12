@@ -28,7 +28,6 @@ class Bot(object):
     def loadTokens(self):
         d = getDictFromFile('tokens.txt')
         self._token = d['token']
-        self.masterID = d['master']
 
     def update(self):
         self.config.update()
