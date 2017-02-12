@@ -36,11 +36,6 @@ async def login(message):
 @command(name='update')
 async def update(message):
 	bot.update()
-	
-@command(name='advance')
-async def advance(message):
-	pass
 
-excludes = ['CommandWrapper', 'command', 'listFunctions']
 thismodule = sys.modules[__name__]
 CommandList = [method for method in dir(thismodule) if callable(getattr(thismodule, method)) and str(method)[0] != '_' and method not in excludes]
